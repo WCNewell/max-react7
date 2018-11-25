@@ -88,45 +88,89 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/next/dist/pages/_app.js":
-/*!**********************************************!*\
-  !*** ./node_modules/next/dist/pages/_app.js ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! next/app */ "next/app")
-
-
-/***/ }),
-
-/***/ 1:
-/*!****************************************************!*\
-  !*** multi ./node_modules/next/dist/pages/_app.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! /Users/clarknewell/Desktop/webDev/max-udemy-react/max-react7/node_modules/next/dist/pages/_app.js */"./node_modules/next/dist/pages/_app.js");
-
-
-/***/ }),
-
-/***/ "next/app":
-/*!***************************!*\
-  !*** external "next/app" ***!
-  \***************************/
-/*! no static exports found */
+/***/ 0:
 /***/ (function(module, exports) {
 
-module.exports = require("next/app");
+module.exports = require("react");
+
+/***/ }),
+
+/***/ 16:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(0);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: external "styled-jsx/style"
+var style_ = __webpack_require__(3);
+var style_default = /*#__PURE__*/__webpack_require__.n(style_);
+
+// CONCATENATED MODULE: ./components/User.js
+
+
+
+var User_User = function User(props) {
+  return external_react_default.a.createElement("div", {
+    className: "jsx-1653707754"
+  }, external_react_default.a.createElement("h1", {
+    className: "jsx-1653707754"
+  }, props.name), external_react_default.a.createElement("p", {
+    className: "jsx-1653707754"
+  }, "Age: ", props.age), external_react_default.a.createElement(style_default.a, {
+    styleId: "1653707754",
+    css: ["div.jsx-1653707754{border:1px solid #eee;box-shawdow:0 2px 3px #ccc;padding:20px;text-align:center;}"]
+  }));
+};
+
+/* harmony default export */ var components_User = (User_User);
+// CONCATENATED MODULE: ./pages/auth/index.js
+
+
+
+var auth_authIndexPage = function authIndexPage(props) {
+  return external_react_default.a.createElement("div", null, external_react_default.a.createElement("h1", null, "The Auth Index Page - ", props.appName), external_react_default.a.createElement(components_User, {
+    name: "Max",
+    age: 28
+  }));
+};
+
+auth_authIndexPage.getInitialProps = function (context) {
+  var promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve({
+        appName: 'Super App (Auth)'
+      });
+    }, 1000);
+  });
+  return promise;
+};
+
+/* harmony default export */ var auth = __webpack_exports__["default"] = (auth_authIndexPage);
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
+
+/***/ }),
+
+/***/ 7:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(16);
+
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=_app.js.map
